@@ -891,16 +891,77 @@ section,
 }
 
 .portfolio-content {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for better visual appearance */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.portfolio-content img {
+    width: 100%; /* Make sure images take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.portfolio-content:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover for visual interest */
+}
+
+.portfolio-content .portfolio-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text */
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-content:hover .portfolio-info {
+    opacity: 1; /* Show the text on hover */
+}
+
+.portfolio-info h4 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.portfolio-info p {
+    font-size: 14px;
+    margin: 5px 0 0;
+    font-weight: 400;
+}
+
+.portfolio-info a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.portfolio-info a:hover {
+    color: #ffc107; /* Change icon color on hover */
+}
+
+.portfolio-content {
   position: relative;
   overflow: hidden;
   border-radius: 8px; /* Rounded corners for images */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for better visual appearance */
   transition: transform 0.3s ease; /* Smooth hover effect */
+  width: 100%; /* Make the container width 100% of its parent */
+  height: 300px; /* Set a fixed height for uniform image size */
 }
 
 .portfolio-content img {
   width: 100%; /* Make sure images take the full width of the container */
-  height: auto; /* Maintain aspect ratio */
+  height: 100%; /* Make sure images take the full height of the container */
+  object-fit: cover; /* Ensures the image covers the area while maintaining its aspect ratio */
   display: block;
   transition: transform 0.3s ease; /* Smooth hover effect */
 }
