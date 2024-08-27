@@ -1150,6 +1150,14 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
+/* Aturan untuk menetapkan ukuran gambar */
+.fixed-size-img {
+  width: 700px; /* Atur lebar tetap gambar */
+  height: 300px; /* Atur tinggi tetap gambar */
+  border-radius: 10px; /* Tambahkan radius untuk efek visual yang lebih menarik (opsional) */
+}
+
+
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
