@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,28 +26,18 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
 
+  <!-- Header Section -->
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
-
     <div class="profile-img">
       <img src="assets/img/DSCF9998+.jpg" alt="" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Rahmana Zahara Budi Putra</h1>
     </a>
 
@@ -63,10 +53,12 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li class="dropdown">
+          <a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown">
+              <a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="#">Deep Dropdown 1</a></li>
                 <li><a href="#">Deep Dropdown 2</a></li>
@@ -83,39 +75,33 @@
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
-
   </header>
+  <!-- End Header Section -->
 
   <main class="main">
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
       <img src="assets/img/bg2.jpeg" alt="" data-aos="fade-in" class="">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Rahmana Zahara Budi Putra</h2>
-        <p>I'm <span class="typed" data-typed-items="Data Analyst, Data Science, UI/UX Designer, Front-End Developer">Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I'm <span class="typed" data-typed-items="Data Analyst, Data Science, UI/UX Designer, Front-End Developer">Developer</span></p>
       </div>
-
-    </section><!-- /Hero Section -->
+    </section>
+    <!-- End Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
         <p style="text-align: justify;">
           Rahmana adalah seorang Data Analyst, Data Scientist, UI/UX Designer, dan Front-End Developer dengan latar belakang pendidikan S1 Teknik Informatika dari Universitas Muhammadiyah. 
           Saya memiliki pengalaman dalam mengolah dan menganalisis data untuk menghasilkan wawasan yang mendukung pengambilan keputusan bisnis. 
           Selain itu, saya juga memiliki keahlian dalam merancang antarmuka pengguna yang intuitif dan menarik serta kemampuan dalam pengembangan front-end yang responsif dan efisien.
-      </p>
-      
-      </div><!-- End Section Title -->
+        </p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
             <img src="assets/img/DSCF9992+.jpg" class="img-fluid" alt="">
@@ -125,8 +111,8 @@
             <p class="fst-italic py-3" style="text-align: justify;">
               Seorang Data Analyst bertugas menganalisis data untuk menemukan pola, tren, dan wawasan yang dapat membantu perusahaan membuat keputusan bisnis yang lebih baik.
               Data Scientist melangkah lebih jauh dengan menggunakan teknik statistik dan machine learning untuk membangun model prediktif dan solusi data-driven yang kompleks. 
-              UI/UX Designer fokus pada menciptakan pengalaman pengguna yang intuitif dan menarik dengan merancang antarmuka yang mudah digunakan, memastikan produk digital tidak hanya fungsional tetapi juga memuaskan dari sisi estetika dan usability. Front-End Developer bertanggung jawab untuk menerjemahkan desain 
-              UI/UX menjadi kode yang dapat dieksekusi di web, memastikan tampilan dan interaksi situs web berjalan dengan baik di berbagai perangkat dan platform.
+              UI/UX Designer fokus pada menciptakan pengalaman pengguna yang intuitif dan menarik dengan merancang antarmuka yang mudah digunakan, memastikan produk digital tidak hanya fungsional tetapi juga memuaskan dari sisi estetika dan usability. 
+              Front-End Developer bertanggung jawab untuk menerjemahkan desain UI/UX menjadi kode yang dapat dieksekusi di web, memastikan tampilan dan interaksi situs web berjalan dengan baik di berbagai perangkat dan platform.
             </p>
             <div class="row">
               <div class="col-lg-6">
@@ -149,12 +135,11 @@
           </div>
         </div>
       </div>
-    </section><!-- /About Section -->
+    </section>
+    <!-- End About Section -->
 
     <!-- Skills Section -->
     <section id="skills" class="skills section light-background">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
         <h4>Hard Skills</h4>
@@ -162,51 +147,52 @@
           <li>Microsoft Office, Pememrograman, Data Manipulation, Data Visualization, Data Cleaning,  
             ETL (Extract, Transfrom, Load), Machine Learning, Deep Learning, Data Engineering, UI/UX Designer</li>
         </ul>
-
         <h4>Soft Skills</h4>
         <ul>
           <li>Komunikasi, Pemecahan Masalah, Kerja Tim, Manajemen Waktu, Kreativitas, Keterampilan Kolaborasi, Perhatian terhadap Detail</li>
         </ul>
         <h4>Tools</h4>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row skills-content skills-animation">
-          <div class="container">
-            <div class="row text-center">
-                <div class="col-3 skill-item">
-                    <img src="assets/img/excel-logo.png" alt="Excel" class="skill-logo" style="width: 100px;">
-                </div>
-                <div class="col-3 skill-item">
-                    <img src="assets/img/python-logo.png" alt="Python" class="skill-logo" style="width: 100px;">
-                </div>
-                <div class="col-3 skill-item">
-                    <img src="assets/img/Power BI.jpeg" alt="Power BI" class="skill-logo" style="width: 100px;">
-                </div>
-                <div class="col-3 skill-item">
-                    <img src="assets/img/tableu-logo.png" alt="Tableau" class="skill-logo" style="width: 220px;">
-                </div>
-                <div class="col-3 skill-item">
-                    <img src="assets/img/google-data-studio.png" alt="Google Data Studio" class="skill-logo" style="width: 200px;">
-                </div>
-                <div class="col-3 skill-item">
-                    <img src="assets/img/figma-logo.png" alt="Figma" class="skill-logo" style="width: 120px;">
-                </div>
-                <div class="col-3 skill-item">
-                    <img src="assets/img/viscod-logo.png" alt="Viscod" class="skill-logo" style="width: 120px;">
-                </div>
+          <div class="row text-center">
+            <div class="col-3 skill-item">
+              <img src="assets/img/excel-logo.png" alt="Excel" class="skill-logo">
             </div>
+            <div class="col-3 skill-item">
+              <img src="assets/img/python-logo.png" alt="Python" class="skill-logo">
+            </div>
+            <div class="col-3 skill-item">
+              <img src="assets/img/Power BI.jpeg" alt="Power BI" class="skill-logo">
+            </div>
+            <div class="col-3 skill-item">
+              <img src="assets/img/tableu-logo.png" alt="Tableau" class="skill-logo">
+            </div>
+            <div class="col-3 skill-item">
+              <img src="assets/img/google-data-studio.png" alt="Google Data Studio" class="skill-logo">
+            </div>
+            <div class="col-3 skill-item">
+              <img src="assets/img/figma-logo.png" alt="Figma" class="skill-logo">
+            </div>
+            <div class="col-3 skill-item">
+              <img src="assets/img/viscod-logo.png" alt="Viscod" class="skill-logo">
+            </div>
+            <div class="col-3 skill-item">
+              <img src="assets/img/scikit-learn.jpeg" alt="Scikit Learn" class="skill-logo">
+            </div>
+          </div>
         </div>
       </div>
-
-    </section><!-- /Skills Section -->
+    </section>
+    <!-- End Skills Section -->
 
     <!-- Resume Section -->
     <section id="resume" class="resume section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
+      </div>
+
       <div class="container">
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -216,23 +202,22 @@
               <h5>May 2020 - Sep 2024</h5>
               <p><em>Universitas Muhammadiyah Surakarta, Surakarta, IDN</em></p>
               <p>IPK : 3.27/4.00</p>
-            </div><!-- Edn Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>Mini Cource - Data Analyst</h4>
               <h5>8 Desember 2023</h5>
               <p><em>Revou, Jakarta, IDN</em></p>
-              <p>Pelatihan intensif selama 2 minggu tentang analisis data, mencakup teknik-teknik pengolahan data, visualisasi data,dan penggunaan alat analisis data.</p>
-                 <ul>
-                  <li>Pemahaman dasar tentang apa itu data analyst, peran Data Analyst dalam sebuah perusahaan, dan mengapa data analyst itu penting.</li>
-                  <li>Bagaimana cara mengumpulkan data dari berbagai sumber, termasuk pengenalan pada data primer dan data sekunder.Teknik-teknik dasar dalam membersihkan data, seperti mengatasi data yang hilang, duplikat, dan tidak valid.</li>
-                  <li>Memahami dan menggunakan statistik dasar untuk menganalisis data, seperti mean, median, mode, dan distrubusi data.</li>
-                  <li>Dasar-dasar visualisasi data menggunakan alat seperti Excel atau Google Data Studio, serta pentingnya visualisasi dalam menyajikan data.</li>
-                  <li>Mempelajari dasar-dasar SQL untuk mengakses dan memanipulasi data dari database, seperti SELECT, JOIN, WHERE, dan lainnya.</li>
-                  <li>Pengenalan berbagai alat yang sering digunakan oleh Data Analyst seperti Google BigQuery, yang digunakan untuk menjalankan query SQL diatas data dalam jumlah besar dengan cepat dan efien.</li>
-                </ul>
-            </div><!-- Edn Resume Item -->
-
+              <p>Pelatihan intensif selama 2 minggu tentang analisis data, mencakup teknik-teknik pengolahan data, visualisasi data, dan penggunaan alat analisis data.</p>
+              <ul>
+                <li>Pemahaman dasar tentang apa itu data analyst, peran Data Analyst dalam sebuah perusahaan, dan mengapa data analyst itu penting.</li>
+                <li>Bagaimana cara mengumpulkan data dari berbagai sumber, termasuk pengenalan pada data primer dan data sekunder. Teknik-teknik dasar dalam membersihkan data, seperti mengatasi data yang hilang, duplikat, dan tidak valid.</li>
+                <li>Memahami dan menggunakan statistik dasar untuk menganalisis data, seperti mean, median, mode, dan distribusi data.</li>
+                <li>Dasar-dasar visualisasi data menggunakan alat seperti Excel atau Google Data Studio, serta pentingnya visualisasi dalam menyajikan data.</li>
+                <li>Mempelajari dasar-dasar SQL untuk mengakses dan memanipulasi data dari database, seperti SELECT, JOIN, WHERE, dan lainnya.</li>
+                <li>Pengenalan berbagai alat yang sering digunakan oleh Data Analyst seperti Google BigQuery, yang digunakan untuk menjalankan query SQL di atas data dalam jumlah besar dengan cepat dan efisien.</li>
+              </ul>
+            </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
@@ -242,38 +227,33 @@
               <h5>Mei 2023 - April 2024</h5>
               <p><em>Kab Sukoharjo, Surakarta, IDN </em></p>
               <ul>
-                <li>Membuat wireframe dan prototipe untuk antarmuka pengguna perpustakaan menggunkan Figma. </li>
-                <li>Bekerja sama dengan tim pengembangan untuk mengimplementasikan desain UI/UX ke dalam sistem perpustakaan. </li>
+                <li>Membuat wireframe dan prototipe untuk antarmuka pengguna perpustakaan menggunakan Figma.</li>
+                <li>Bekerja sama dengan tim pengembangan untuk mengimplementasikan desain UI/UX ke dalam sistem perpustakaan.</li>
               </ul>
-            </div><!-- Edn Resume Item -->
+            </div>
           </div>
-
         </div>
-
       </div>
-
-    </section><!-- /Resume Section -->
+    </section>
+    <!-- End Resume Section -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
+      </div>
+
       <div class="container">
-
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-analyst">Data Analyst</li>
             <li data-filter=".filter-science">Data Science</li>
             <li data-filter=".filter-designer">UI/UX Designer</li>
             <li data-filter=".filter-frontend">Front End</li>
-          </ul><!-- End Portfolio Filters -->
+          </ul>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-analyst">
               <div class="portfolio-content h-100">
                 <img src="assets/img/bromo1.jpeg" class="img-fluid fixed-size-img" alt="">
@@ -368,76 +348,66 @@
                   <a href="front-end-perpustakaan" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
-            
-          </div><!-- End Portfolio Container -->
+            </div><!-- End Portfolio Item -->
         </div>
       </div>
-    </section><!-- /Portfolio Section -->
+    </section>
+    <!-- End Portfolio Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
+      </div>
+
+      <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-12"> <!-- Mengubah col-lg-5 menjadi col-lg-12 agar mencakup seluruh lebar -->
-            <div class="info-wrap d-flex justify-content-between"> <!-- Menambahkan kelas Flexbox -->
-              
+          <div class="col-lg-12">
+            <div class="info-wrap d-flex justify-content-between">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h3>Address</h3>
                   <p>Jl. Ksatria Bhakti ll/4 Kec. Kartoharjo, Kel.Kanigoro, Madiun, Jawa Timur, Indonesia</p>
                 </div>
-              </div><!-- End Info Item -->
-      
+              </div>
+
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Call Us</h3>
                   <p>+62 8577455031</p>
                 </div>
-              </div><!-- End Info Item -->
-      
+              </div>
+
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Us</h3>
                   <p>rahmanazbp30@gmail.com</p>
                 </div>
-              </div><!-- End Info Item -->
-      </div><!-- End Section Title -->
-          </div><!-- End Info Wrap -->
-        </div><!-- End Row -->
-      </div><!-- End Container -->
-      
-
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
-
-    </section><!-- /Contact Section -->
+    </section>
+    <!-- End Contact Section -->
 
   </main>
 
+  <!-- Footer -->
   <footer id="footer" class="footer position-relative light-background">
-
     <div class="container">
-      <div class="copyright text-center ">
+      <div class="copyright text-center">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
       </div>  
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-
   </footer>
+  <!-- End Footer -->
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

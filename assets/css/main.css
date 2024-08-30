@@ -722,6 +722,27 @@ section,
   background-color: var(--accent-color);
 }
 
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem; /* Optional: Memberikan sedikit ruang di bawah setiap item */
+}
+
+.skill-logo {
+  width: 150px; /* Menentukan lebar yang seragam untuk semua logo */
+  height: auto; /* Mempertahankan rasio aspek logo */
+  max-height: 200px; /* Membatasi tinggi maksimum agar logo tetap proporsional */
+}
+
+.row.text-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Memusatkan logo secara horizontal */
+  gap: 1rem; /* Memberikan jarak antara logo */
+}
+
+
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
