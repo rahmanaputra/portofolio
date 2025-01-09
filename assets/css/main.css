@@ -161,6 +161,21 @@ h6 {
   border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
+.profile-img img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.profile-img img:hover {
+  border-color: #ff6f61; /* Ubah warna border saat hover */
+  transform: scale(1.05); /* Efek pembesaran gambar saat hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan lebih kuat saat hover */
+}
 .header .profile-img img {
   margin: 15px auto;
   display: block;
